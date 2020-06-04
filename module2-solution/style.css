@@ -1,0 +1,64 @@
+body{
+	font-family:'Lato', sans-serif;
+}
+h1{
+			text-align:center;
+			font-size: 175%
+		}
+		.section1,.section2,.section3{
+			background-color: gray;
+			box-sizing: border-box;
+			padding:10px;
+			border: 1px solid black;
+			font-size: 125%
+			margin-right: 20px;
+			margin-left: 20px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			background-position: top right;
+			float:left;
+			clear: right;
+		}
+		.section1 > div , .section2 > div ,.section3 > div{
+			position:relative;
+			top:-10px;
+			right:-10px;
+			width:35%;
+			text-align: center;
+			font-size:125%;
+			background-color: pink;
+			border:1px solid black;
+			position: top-right;
+			float:right;
+		}
+		.section1 > div{
+			background-color: #b96077;
+		}
+		.section2 > div{
+			background-color: #800000;
+			color: white;
+		}
+		.section3 > div
+		{
+			background-color: #e1ad01;
+		}
+		@media (min-width:  992px)
+		{
+			.section1,.section2,.section3{
+				width:31%;
+			}
+		} 
+		@media (min-width: 768px) and (max-width: 991px){
+			.section1,.section2{
+				width: 47%;
+			}
+			.section3{
+				width: 96.5%;
+			}
+		}
+		@media (max-width: 767px)
+		{
+			.section1,.section2,.section3{
+				width: 95%;
+			}
+		}
